@@ -6,6 +6,12 @@ public class ConversionRequest {
     private String sourceCurrency;
     private String targetCurrency;
 
+    public ConversionRequest(String sourceCurrency, String targetCurrency, double amount) {
+        this.sourceCurrency = sourceCurrency;
+        this.targetCurrency = targetCurrency;
+        this.amount = amount;
+    }
+
     public double getAmount() {
         return amount;
     }

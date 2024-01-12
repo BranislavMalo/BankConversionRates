@@ -1,4 +1,4 @@
-package org.bank.conversion.rates.controllers;
+package org.bank.conversion.rates;
 
 import java.util.List;
 import org.bank.conversion.rates.models.Rate;

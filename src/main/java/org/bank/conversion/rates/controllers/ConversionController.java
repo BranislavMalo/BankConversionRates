@@ -24,8 +24,12 @@ public class ConversionController {
     }
 
     @PostMapping(path = "/convert", consumes = "application/json", produces = "application/json")
-    public ResponseEntity<ConversionResult> convertRates(@RequestBody ConversionRequest request) {
+    public ResponseEntity<?> convertRates(@RequestBody ConversionRequest request) {
         try {
+            // Check if the amount is non-negative
+            if (request.getAmount() < 0) {
+                return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Amount cannot be a negative number");
+            }
             final ConversionResult result = rateService.convertRates(request);
             return ResponseEntity.ok(result);
         } catch (RateNotFoundException e) {

@@ -21,13 +21,14 @@ public class Rate {
 
     }
 
-    public Rate(String sourceCurrency, String targetCurrency, double rateValue) {
+    public Rate(long id, String sourceCurrency, String targetCurrency, double rateValue) {
+        this.id = id;
         this.sourceCurrency = sourceCurrency;
         this.targetCurrency = targetCurrency;
         this.rateValue = rateValue;
     }
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
