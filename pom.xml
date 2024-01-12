@@ -12,7 +12,7 @@
 
     <groupId>org.bank.conversion.rates</groupId>
     <artifactId>BankConversionRates</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>BankConversionRates</name>
     <description>BankConversionRates</description>
 
