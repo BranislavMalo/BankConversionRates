@@ -15,14 +15,6 @@
     <name>BankConversionRates</name>
     <description>BankConversionRates</description>
 
-    <modules>
-        <module>core</module>
-        <module>distribution</module>
-        <module>models</module>
-        <module>rest</module>
-        <module>Initializers</module>
-    </modules>
-
     <properties>
         <java.version>17</java.version>
     </properties>

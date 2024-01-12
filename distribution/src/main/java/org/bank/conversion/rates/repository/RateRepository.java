@@ -1,4 +1,4 @@
-package org.bank.conversion.rates.core.database;
+package org.bank.conversion.rates.repository;
 
 import org.bank.conversion.rates.models.Rate;
 import org.springframework.data.jpa.repository.JpaRepository;

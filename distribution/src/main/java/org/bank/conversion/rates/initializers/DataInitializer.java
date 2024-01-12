@@ -1,7 +1,7 @@
-package org.example;
+package org.bank.conversion.rates.initializers;
 
-import org.bank.conversion.rates.core.database.RateRepository;
 import org.bank.conversion.rates.models.Rate;
+import org.bank.conversion.rates.repository.RateRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

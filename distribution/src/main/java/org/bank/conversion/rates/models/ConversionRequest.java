@@ -6,18 +6,6 @@ public class ConversionRequest {
     private String sourceCurrency;
     private String targetCurrency;
 
-    // Constructors, getters, and setters
-
-    public ConversionRequest() {
-        // Default constructor
-    }
-
-    public ConversionRequest(double amount, String sourceCurrency, String targetCurrency) {
-        this.amount = amount;
-        this.sourceCurrency = sourceCurrency;
-        this.targetCurrency = targetCurrency;
-    }
-
     public double getAmount() {
         return amount;
     }
