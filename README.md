@@ -6,6 +6,23 @@ This project is a Spring Boot application for handling currency conversion rates
 
 - Java 17 or later
 - Maven
+- Docker
+
+## Dockerize the Application
+
+###Build the Docker Image
+
+Make sure you are in the project's root directory.
+
+```bash
+docker build -t bank-conversion-rates:latest .
+```
+
+```bash
+docker run -p 8080:8080 bank-conversion-rates:latest
+```
+
+The application will be accessible at http://localhost:8080.
 
 ## Running in IntelliJ IDEA
 
